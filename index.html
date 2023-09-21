@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Resume</title>
+	<link rel="stylesheet" type="text/css" href="pros.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		.home  .slide-content{
+			display: flex;
+			gap: 10px;
+			font-size: 23px;
+			height: 30px;
+			line-height: 30px;
+			overflow: hidden;
+			background: #;
+			padding: 0 6px;
+			color: #fff;
+			width: 65%;
+			border-radius: 6px;
+		}
+		.slide-content .slide {
+			height: 30px;
+			overflow: hidden;
+			color: transparent;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			top: 0;
+			animation: moving 12s steps(3) infinite, typing 2s infinite alternate;
+
+/*			-webkit-text-stroke: 1px #030257;*/
+			color: transparent;
+			background-image: linear-gradient(#f1f1f1, #f1f1f1);
+			background-repeat: no-repeat;
+			-webkit-background-clip: text;
+			background-position: -350px 0;
+			font-weight: bold;
+		}
+
+
+		@keyframes typing{
+			100%{
+				background-position: 0 0;
+			}
+		}
+/*		.slide-content .slide::after{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-left: 3px;
+			background: #fff;
+            position: absolute;
+            left: 0;
+            animation: typing 2s steps(11) infinite alternate;
+		}*/
+		@keyframes moving{
+			100%{
+				top: -90px;
+			}
+		}
+	/*	@keyframes typing{
+			100%{
+				left: 100%;
+				margin: 0 -6px 0 6px;
+			}
+		}*/
+
+		@media screen and (max-width: 779px){
+			 .slide-content .slide{
+				background-image: linear-gradient(#fff, #fff);
+			}
+		}
+
+
+		#top-button{
+			color: black;
+			background: white;
+			padding: 10px;
+			border-radius: 50%;
+			font-size: 20;
+			position: fixed;
+			bottom: 16px;
+			right: 30px;
+			border: none;
+			cursor: pointer;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- <button id="top-button"><i class="fas fa-chevron-up"></i></button> -->
+<!-- THIS IS THE NAVIGATION BAR LEADING THE THE VARIOUS SECTION OF THE WEBSITE -->
+	<nav>
+		<div class="logo"><p>E.</p></div>
+		<ul>
+			<li data-list><a href="#home">Home</a></li>
+			<li data-list><a href="#about">About</a></li>
+			<li data-list><a href="#services">Services</a></li>
+			<li data-list><a href="#portfolio">Portfolio</a></li>
+ 			<li data-list><a href="#contact">Let's talk</a></li>
+		</ul>
+		<i class="fas fa-bars"  id="menu-bar"></i>
+	</nav>
+
+	<!-- THIS SECTION OF THE CODES PROVIDES THE STRUCTURE OF THE HOME PAGE -->
+
+<div id="home">
+<div class="home">
+	<div class="description">
+		<p style="color: #fff; font-family: Lucida Calligraphy; font-weight: bold;">Hi, there!</p>
+		<div class="slide-content">
+		  <span>I'm</span>  
+		  <div class="slides">
+			<div class="slide">Prosper</div> 
+		    <div class="slide">Interpreter</div>
+            <div class="slide">Translator</div>
+		  </div>
+		</div>
+		<p>My name is Prosper Edem Glitse. A freelance <br>conference interpreter and a translator residing in Accra, Ghana <br> 
+		</p>
+
+			<span>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-linkedin-in"></i>
+			</span>
+
+
+				<br>
+		<a href="#about"><button><span></span>Read More</button></a>
+
+	</div>
+	<!-- <div class="bg-img"><img src="../images/stone-1.png" width=""></div> -->
+</div>	
+</div>	
+
+<!-- THIS IS THE ABOUT SECTION OF THE WEBSITE -->
+<div id="about">
+	<div class="about">
+		<div class="img"><img src="images/pros.jpg" width=""></div>
+
+	<div class="text">
+		<h2>About Me</h2>
+		<p>
+			I'm a trained Conference Interpreter and a Translator with background in Banking and Finance. I
+			have covered over 200 conferences, workshops, and seminars and still counting, both in Ghana and
+			abroad.		
+			I'm also the Secretary General for the Ghana Association of Translators and Interpreters (GATI).
+	</p>
+	<div class="resume">
+		<div class="list">
+			<li data-tablink="#skills" class="active">Skills</li>
+			<li data-tablink="#experiences">Experiences</li>
+			<li data-tablink="#education">Education</li>
+		</div>
+
+			<div id="skills" data-content class="active">
+				· Conference Interpreting <br><br><br>
+				. Translation <br><br><br>
+				· Banking and Finance<br><br><br>
+				· Oil and Gas<br><br><br>
+          </div>
+			<div id="experiences" data-content>
+				· Conference Interpreting and Translation<br><br><br>
+				· Banking and Finance<br><br><br>
+				· Oil and Gas <br><br><br>
+			</div>
+			<div id="education" data-content >
+				2012 - 2014 M.A. Conference Interpreting,
+				University of Ghana, Legon<br><br>
+				2007 - 2010 BSc. Banking and Finance
+				Central University, Ghana<br><br>
+				2001 – 2006 Diploma in Translation (English, French and German)
+				School of Translators, (University of Ghana affiliate)<br><br>
+				2004 – 2005 Diplôme d’Etudes en Langue Française (2nd Degré)
+				Delivered by the French Ministry of Education, France<br><br>
+				July, 2005 Diplôme Universitaire d’Etudes Françaises
+				University of Abomey-Calavi, Benin<br><br>
+				1997 – 2000 Senior Secondary School Certificate Examination (“SSSCE”)
+				Electives: French, English Literature and Ewe
+				Kpandu Secondary School, Kpandu
+			</div>		
+	</div>		
+	</div>	
+	</div>
+</div>
+
+<!-- THIS IS THE SERVICES SECTION OF THE WEBSITE -->
+<div id="services">
+	<h2>My Services</h2>
+	<div class="services">
+		<div class="box">
+			<!-- <i class="fas fa-code"></i> -->
+			<h3>Interpreting</h3>
+			<div class="p"> 
+			<p>International Conference on Aids and STIs in Africa 4 – 9 December 2017 Hotel Ivoire Sofitel
+				Abidjan Côte d’Ivoire
+				Ø ANFTS Regional Meeting: Professionals
+			</p>
+		   </div>
+		</div>
+		<div class="box">
+			<!-- <i class="fas fa-code"></i> -->
+			<h3>Translating</h3>
+			<div class="p">
+			<p>International Conference on Aids and STIs in Africa 4 – 9 December 2017 Hotel Ivoire Sofitel
+				Abidjan Côte d’Ivoire
+				Ø ANFTS Regional Meeting: Professionals</p>
+			</div>				
+		</div>
+		<div class="box">
+			<!-- <i class="fas fa-code"></i> -->
+			<h3>Freelancing</h3>
+			<div class="p">
+			<p>International Conference on Aids and STIs in Africa 4 – 9 December 2017 Hotel Ivoire Sofitel
+				Abidjan Côte d’Ivoire
+				Ø ANFTS Regional Meeting: Professionals
+				</p>
+			</div>				
+		</div>
+
+<!-- 		<div class="box">
+			<i class="fas fa-code"></i>
+			<h3>Graphic Design</h3>
+			<p>Building modern website that is responsive on all screen devices.
+				Also hosting websites with affordable packagess.
+				</p>			
+		</div>		 -->
+	</div>
+</div>
+
+
+<!-- THIS IS THE PORFOLIO SECTION OF THE WEBSITE -->
+<div id="portfolio">
+	<h2>Recent Conferences Covered</h2>
+	<div class="portfolio">
+
+   		<div class="portfolio-boxes">
+   			<div class="portfolio-box">
+   				<i class="fa fa-american-sign-language-interpreting"></i>
+   				<div>
+   					<h4>Abidjan, Côte d’Ivoire</h4>
+   					<p>
+						International Conference on Aids and STIs in Africa 4 – 9 December 2017 Hotel Ivoire Sofitel.
+					</p>
+   				</div>
+   			</div>
+   			<div class="portfolio-box">
+   				<i class="fa fa-american-sign-language-interpreting"></i>
+   				<div>
+   					<h4>Accra Ghana</h4>
+   					<p>
+
+   						Joint ACEA I & ACE II Project Workshop 7 – 9 November 2017.						   
+   					</p>
+   				</div>   				
+   			</div>
+   			<div class="portfolio-box">
+   				<i class="fa fa-american-sign-language-interpreting"></i>
+   				<div>
+   					<h4>Elmina, Ghana</h4>
+   					<p>
+						ANFTS Regional Meeting: Professionals / Experts Meeting in Support of Fish Safety, Technology
+						and Marketing in Africa, 14 – 16 November 2017.      						
+   					</p>
+   				</div>   				
+   			</div>
+   			<div class="portfolio-box">
+   				<i class="fa fa-american-sign-language-interpreting"></i>
+   				<div>
+   					<h4>Accra, Ghana</h4>
+   					<p>
+					 Sub-Regional Training Workshop on Enhancing Skills of Water Professionals in the Assessment,
+					Monitoring and Management of Water Quality in Agenda 2030 SDGs 3 – 4 October, 2017 Accra;
+					Ø Training Workshop on Enterprise Risk Management Venue: EBID Lomé Togo, Date: 7 – 11 August,
+   					</p>
+   				</div>   				
+   			</div>
+   		</div>		
+
+ 
+	</div>
+</div>
+
+<!-- THIS ARE TEH FREQUENTLY ASKED QUESTIONS -->
+<div id="accordion">
+	<h2>Frequently Asked Questions?</h2>
+	<div class="accordion-container">
+		<div class="accordion">
+         <div class="question-icon">
+			<div class="question">How is your pricing</div>
+			<i class="fas fa-chevron-down"></i>         	
+         </div> 
+			<p class="answer">My pricing done in proportion to the content of the project</p>
+		</div>
+
+		<div class="accordion">
+         <div class="question-icon">
+			<div class="question">How is your pricing</div>
+			<i class="fas fa-chevron-down"></i>         	
+         </div> 
+			<p class="answer">My pricing done in proportion to the content of the project</p>
+		</div>
+
+		<div class="accordion">
+         <div class="question-icon">
+			<div class="question">Are you a web developers?</div>
+			<i class="fas fa-chevron-down"></i>         	
+         </div> 
+			<p class="answer">My pricing done in proportion to the content of the project</p>
+		</div>	
+
+		<div class="accordion">
+         <div class="question-icon">
+			<div class="question">Are you a web developers?</div>
+			<i class="fas fa-chevron-down"></i>         	
+         </div> 
+			<p class="answer">My pricing done in proportion to the content of the project</p>
+		</div>						
+	</div>
+</div>
+
+
+ 
+
+  <div id="contact">
+  	<h2>Contact Me</h2>
+  	<div class="contact">
+	
+  		<div class="open">
+  			<h3>Opening Hours</h3>
+  			<span>
+  				<i class="fas fa-clock"></i>
+  				<p>Monday to Friday - 8am to 4pm</p>
+  			</span>
+
+  			<span>
+  				<i class="fas fa-clock"></i>
+  				<p>Sartuday - 8:30am to 3pm</p>
+  			</span>
+
+  			<span>
+  				<i class="fas fa-clock"></i>
+  				<p>Closed on Sunday</p>
+  			</span>   	  			
+  		</div>
+
+
+  		<div class="contact-details">
+  			<h3>Get In Touch</h3>
+  			<span>
+  				<p>Legon, Accra, LG25</p>
+  				 <i class="fa fa-map-marker" data-icon></i> 
+  			</span>
+
+  			<span>
+  				<p>+233243 821240</p>
+  				 <i class="fas fa-phone" data-icon></i> 
+  			</span>
+
+  			<span>
+  				<p>edmglitse@gmail.com</p>
+  				 <i class="fa fa-envelope" data-icon></i> 
+  			</span> 
+ 	
+  		</div>
+
+  	</div>
+   <div class="socials">
+   		<span class="brands">
+   			<i class="fa-brands fa-instagram"></i>
+   			<i class="fa-brands fa-twitter"></i>
+   			<i class="fa-brands fa-facebook-f"></i>
+   			<i class="fa-brands fa-linkedin-in"></i>
+   		</span>
+   </div>
+			<div style="margin-top: 20px;">
+				Copyright &#169; 
+			 <script>
+			 	const date = new Date()
+			document.write(date.getFullYear())
+		    </script>		
+				personal porfolio website. All rights reserved.
+
+		 </div>
+
+</div>
+<script type="text/javascript">
+	const tabLinks = document.querySelectorAll('[data-tablink]')
+	const contents = document.querySelectorAll('[data-content]')
+	tabLinks.forEach(link=>{
+		link.addEventListener('click', ()=>{
+			const target = document.querySelector(link.dataset.tablink)
+			contents.forEach(content=>{
+				content.classList.remove('active')
+			})
+				tabLinks.forEach(link=>{
+					link.classList.remove('active')
+				})			
+
+			link.classList.add('active')
+			target.classList.add('active')
+		})
+	})
+
+	// THIS CODES SCRIPT THE FREQUENTLY ASKED QUESTIONS 
+			// const answers = document.getElementsByClassName('answer')
+		const accordions = document.getElementsByClassName('accordion')
+		Array.from(accordions).forEach(accordion=>{
+			accordion.addEventListener('click', ()=>{
+				accordion.classList.toggle('active')
+			})
+		})
+
+		// THIS SECTION OF THE CODE SHOW AND HIDES THE NAV UL BY CLICKING ON THE MENUBAR
+
+		const ul = document.getElementsByTagName('ul')[0]
+		const menu = document.getElementById('menu-bar')
+		const li = document.querySelectorAll('[data-list]')
+
+		menu.addEventListener('click', ()=>{
+			ul.classList.toggle('ulClicked')
+		})
+
+		li.forEach(list=>{
+			list.addEventListener('click', ()=>{
+				ul.classList.toggle('ulClicked')
+			})
+		})
+
+		//// WRITING SCRIPT FOR DARK THEME
+		const theme = document.getElementById('top-button')
+
+		 theme.addEventListener('click', ()=>{
+		 	document.body.classList.toggle('dark-theme-variables') 
+		 })
+</script>
+</body>
+</html>
