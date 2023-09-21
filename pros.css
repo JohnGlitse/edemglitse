@@ -67,7 +67,7 @@ nav ul li a{
 	color: #fff;
 	font-size: 18px;
 	position: relative;
-	font-family: var(--slant-font);
+/* 	font-family: var(--slant-font); */
 }
 nav ul li a:before{
 	content: '';
